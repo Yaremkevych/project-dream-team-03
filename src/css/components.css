@@ -31,16 +31,14 @@ ol {
 }
 .container {
   width: 100%;
-  max-width: 375px;
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 373px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0px auto;
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 734px;
   }
   body {
     font-size: 18px;
@@ -49,7 +47,5 @@ ol {
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1350px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
