@@ -12,8 +12,124 @@
 }
 
 .clients-reviews-item {
+    width: 100%;
     max-width: 343px;
     background-color: #fff;
     border-radius: 8px;
     padding: 24px;
 }
+
+.container-clients-img {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.clients-img {
+    object-fit: contain;
+}
+
+.clients-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.reviews-time {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.reviews-text {
+    width: 100%;
+    max-width: 296px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.clients-reviews-item-james,
+.clients-reviews-item-emily {
+    display: none;
+}
+
+@media screen and (max-width: 373px) {
+    .clients-subtitle {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+      max-width: 734px;
+    }
+    body {
+      font-size: 18px;
+    }
+    .section-clients-reviews {
+        padding: 36px 32px;
+    }
+    .list-clients-reviews {
+        display: flex;
+        gap: 16px;
+    }
+
+    .clients-reviews-tittle {
+        font-size: 32px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+    .clients-reviews-item,
+    .clients-reviews-item-james {
+        display: block;
+        width: 100%;
+        max-width: 343px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 24px;
+    }
+    .container-clients-img {
+        margin-bottom: 14px;
+    }
+    .clients-img {
+        width: 54px;
+        height: 54px;
+    }
+    .clients-subtitle {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .reviews-time {
+        font-size: 16px;
+    }
+    .reviews-text {
+        font-size: 18px;
+    }
+
+  }
+  @media screen and (min-width: 1440px) {
+    .container {
+      max-width: 1350px;
+    }
+    .section-clients-reviews {
+        padding: 60px;
+    }
+    .clients-reviews-item,
+    .clients-reviews-item-james,
+    .clients-reviews-item-emily {
+        display: block;
+        width: calc((100% - 46px) / 2);
+        max-width: 424px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 32px;
+    }
+    .reviews-text {
+        max-width: 360px;
+    }
+  }
