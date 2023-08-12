@@ -1,20 +1,3 @@
-@media screen and (min-width: 768px) {
-  .section-price {
-    padding-bottom: 100px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .section-price {
-    padding: 0 112px 100px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .section-price {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-}
-
 .section-price-item {
   position: relative;
   display: flex;
@@ -58,4 +41,23 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5; /* 150% */
+}
+@media screen and (min-width: 768px) {
+  .section-price {
+    padding-bottom: 100px;
+  }
+  .section-price-title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-price {
+    padding: 0 112px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-price {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
