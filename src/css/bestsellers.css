@@ -51,17 +51,15 @@
     max-width: 1122px;
   }
   .bestsellers-list {
-    display: table;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 536px 1fr 1fr;
   }
-  .bestsellers-list-item:first-child {
-    width: 536px;
-    float: left;
+  .item-main {
+    grid-column: 1;
+    grid-row: 1/3;
   }
   .bestsellers-list-item:not(first-child) {
-    width: calc((100% - 576px) / 2);
-    float: right;
-  }
-  .bestsellers-list-item:last-child,
-  .bestsellers-list-item:nth-last-child(2) {
+    width: 100%;
   }
 }
