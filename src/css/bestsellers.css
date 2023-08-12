@@ -29,6 +29,13 @@
   .bestsellers {
     padding-bottom: 100px;
   }
+  .bestsellers-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .bestsellers-name {
+    margin-top: 15px;
+  }
   .bestsellers-list-item:last-child,
   .bestsellers-list-item:nth-last-child(2) {
     display: block;
