@@ -1,0 +1,154 @@
+.hero {
+  padding-top: 140px;
+  padding-bottom: 313px;
+  border-top: 1px solid #000;
+  background-image: url('../img/product-1-mob.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 54%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/product-1-mob-2x.jpg);
+  }
+}
+
+.hero-first-box {
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  max-width: 286px;
+  font-size: 28px;
+  font-family: 'Playfair Display';
+  text-transform: uppercase;
+}
+
+.hero-text {
+  margin-bottom: 28px;
+}
+
+.hero-subscribe {
+  display: flex;
+  justify-content: center;
+  max-width: 224px;
+  padding: 12px 65px;
+  background-color: var(--blue-font);
+  color: var(--white);
+  line-height: 1.33;
+}
+
+.hero-subscribe:is(:hover, :focus) {
+  background-color: var(--blue-focus);
+}
+
+/* -----------------MOBILE under breakpoin---------------- */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .hero {
+    background-position: 52%;
+  }
+}
+
+/* -----------------TABLET---------------- */
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: none;
+    padding: 0;
+    padding-top: 64px;
+    padding-bottom: 100px;
+    filter: unset;
+  }
+
+  .hero-first-box {
+    min-height: 528px;
+    margin-bottom: 0;
+    margin-bottom: 32px;
+    background-image: url('../img/product-1-tab.jpg'),
+      url('../img/product-2-tab.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right center;
+    background-size: 308px 329px, 364px 531px;
+  }
+
+  .hero-title {
+    max-width: 648px;
+    font-size: 50px;
+  }
+
+  .hero-second-box {
+    background-image: none;
+  }
+  .hero-text {
+    max-width: 312px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .hero-subscribe {
+    padding: 17px 65px;
+    font-size: 18px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-first-box {
+      background-image: url('../img/product-1-tab-2x.jpg'),
+        url('../img/product-2-tab-2x.jpg');
+    }
+  }
+}
+/* -----------------DESKTOP---------------- */
+@media screen and (min-width: 1440px) {
+  .hero {
+    margin: 0 auto;
+    background-image: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-container {
+    height: 530px;
+  }
+
+  .hero-first-box {
+    max-width: 983px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/product-1-desktop.jpg'),
+      url('../img/product-2-desktop.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right center;
+    background-size: 310px 329px, 648px 530px;
+  }
+
+  .hero-second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    max-width: 312px;
+    background-image: url('../img/product-3-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 312px 337px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-first-box {
+      background-image: url('../img/product-1-desktop-2x.jpg'),
+        url('../img/product-2-desktop-2x.jpg');
+    }
+
+    .hero-second-box {
+      background-image: url('../img/product-3-desktop-2x.jpg');
+    }
+  }
+}
