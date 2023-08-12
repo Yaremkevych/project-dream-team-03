@@ -108,12 +108,9 @@
     margin: 0 auto;
     background-image: none;
   }
-  .container {
+  .hero-container {
     display: flex;
     justify-content: space-between;
-  }
-
-  .hero-container {
     height: 530px;
   }
 
