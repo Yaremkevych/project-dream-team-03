@@ -3,12 +3,13 @@
 }
 
 .products-title {
-  color: #0A224A;
+  color: #0a224a;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
+  text-transform: uppercase;
   margin-bottom: 33px;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .products-subtitle {
-  margin-top: 16px;
+  margin-top: 15px;
   text-align: left;
 }
 
@@ -57,11 +58,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
   .container {
     max-width: 1350px;
   }
-  
+
   .our-products-item,
   .our-products-item-tab,
   .our-products-item-jpg {
