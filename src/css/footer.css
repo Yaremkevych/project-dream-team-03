@@ -6,14 +6,11 @@ address {
   padding-top: 36px;
   padding-bottom: 16px;
 }
-
 .footer-logo {
   display: flex;
   align-items: center;
-  padding-bottom: 36px;
-}
-
-.footer-logo-one {
+  justify-content: space-between;
+  margin-bottom: 36px;
 }
 
 .footer-logo-icon {
@@ -22,11 +19,8 @@ address {
 .footer-social {
   margin-right: 16px;
 }
-
 .footer-social-icon {
   fill: var(--white);
-}
-.footer-navigation {
 }
 .footer-list {
   color: var(--white);
@@ -34,11 +28,9 @@ address {
 .footer-item:not(:last-child) {
   margin-bottom: 8px;
 }
-
 .footer-navigation {
   padding-bottom: 36px;
 }
-
 .address {
   color: var(--white);
   margin-bottom: 64px;
@@ -47,10 +39,21 @@ address {
   margin-bottom: 36px;
 }
 .footer-adress-link {
+  display: block;
   margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+.footer-adress-schedule {
+  letter-spacing: 0.01em;
 }
 .contacts-item:not(:last-child) {
   margin-bottom: 8px;
+}
+.contacts-item-tel {
+  letter-spacing: 0.01em;
+}
+.mail {
+  display: none;
 }
 .privacy-policy {
   text-align: center;
@@ -60,7 +63,6 @@ address {
   line-height: 1.16;
   letter-spacing: 0.1em;
 }
-
 .privacy-policy-link {
   text-decoration: underline;
 }
@@ -69,19 +71,88 @@ address {
   .container {
     max-width: 734px;
   }
+  .footer {
+    /* position: relative; */
+  }
   .footer-logo {
     position: relative;
+    margin-bottom: 32px;
+  }
+  .footer-logo-icon {
+    width: 127px;
   }
   .footer-navigation {
     position: absolute;
-    top: 44px;
+    top: 36px;
     left: 50%;
     transform: translateY(50%);
+  }
+  .footer-adress {
+    margin-bottom: 64px;
+  }
+  .footer-adress-link {
+    font-size: 19px;
+    letter-spacing: 0.01em;
+  }
+  .footer-adress-schedule {
+    font-size: 19px;
+    letter-spacing: 0.01em;
+  }
+  .footer-adress-link {
+    margin-bottom: 24px;
+  }
+  .contacts-list {
+    margin-bottom: 24px;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .contacts-item-tel {
+    font-size: 19px;
+    letter-spacing: 0.01em;
+  }
+  .contacts-item-mail {
+    font-size: 19px;
+    letter-spacing: 0.01em;
+  }
+  .mail {
+    display: inline;
+  }
+  .privacy-policy {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.07em;
+  }
+  .footer-social-icon {
+    width: 40px;
+    height: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1350px;
+  }
+  .footer-list {
+    display: flex;
+    gap: 30px;
+  }
+  .footer-navigation {
+    position: absolute;
+    top: 36px;
+    left: 30%;
+    transform: translateY(120%);
+  }
+
+  .address {
+    display: flex;
+    gap: 85px;
+    margin-bottom: 35px;
+  }
+  .footer-adress {
+    margin-bottom: 0;
+  }
+  .contacts-list {
+    margin-bottom: 0;
   }
 }
