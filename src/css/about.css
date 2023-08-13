@@ -2,7 +2,6 @@
   position: relative;
   color: var(--blue-font);
   font-size: 16px;
-  line-height: 1.5; /* 150% */
   padding-left: 50px;
   margin-bottom: 30px;
 }
@@ -16,31 +15,23 @@
   background-color: var(--blue-font);
 }
 .section-about-subtitle {
-  color: var(--blue-font);
   font-size: 28px;
-  line-height: 1.5; /* 150% */
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 .section-about-text {
-  color: var(--blue-font);
   font-size: 16px;
-  line-height: 1.5; /* 150% */
   margin-bottom: 30px;
 }
 .section-about-item-title {
-  color: var(--blue-font);
   text-align: center;
   font-size: 50px;
-  line-height: 1.5; /* 150% */
   text-transform: uppercase;
   margin-bottom: 14px;
 }
 .section-about-item-text {
-  color: var(--blue-font);
   text-align: center;
   font-size: 16px;
-  line-height: 1.5; /* 150% */
 }
 
 /* -----------MOBILE----------- */
