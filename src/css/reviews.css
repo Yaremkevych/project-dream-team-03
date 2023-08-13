@@ -110,7 +110,9 @@
 
   }
   @media screen and (min-width: 1440px) {
-    
+    .list-clients-reviews{
+        margin-bottom: 0px;
+    }
     .section-clients-reviews {
         padding: 60px 0px;
     }
