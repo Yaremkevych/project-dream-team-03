@@ -16,10 +16,12 @@
     height: 50px;
     padding: 11px 20px;
     border: 1px solid var(--grey);
+    outline: transparent;
 }
 
 .subscription-field {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .subscription-input:hover,
@@ -37,19 +39,21 @@
     color: var(--blue-font);
 }
 
-.subscription-input:invalid {
-    color: var(--red);
-    border: 1px solid var(--red);
-    position: relative;
-}
-
-.subscription-input:invalid::after {
-    content: "\f06a";
+.error-icon {
     position: absolute;
     right: 20px;
-    top: 20px;
-    font-family: "Font Awesome";
-    font-size: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--red);
+    visibility: hidden;
+}
+
+.subscription-field.error .error-icon {
+    visibility: visible;
+}
+
+.subscription-field.error .subscription-input {
+    border: 1px solid var(--red);
     color: var(--red);
 }
 
@@ -102,7 +106,7 @@
 .agreement-check:checked +.check-text .check-terms {
     border: none;
     background-color: var(--blue-font);
-    fill: var(--white);
+    stroke: var(--white);
 }
 
 .subscription-field-checkbox {
@@ -160,6 +164,12 @@
 
 }
 
+@media screen and (min-width:768px) and (max-width:1439px) {
+    .subscription-field {
+        width: 536px;
+    }
+}
+
 @media screen and (min-width:1320px) {
     .container {
         max-width: 1126px;
@@ -191,5 +201,5 @@
         justify-content: space-between;
         min-height: 410px;
     }
-
+    
 }
