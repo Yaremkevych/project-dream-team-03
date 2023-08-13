@@ -2,18 +2,14 @@ import Swiper from 'swiper/bundle';
 
 
 const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    speed: 200,
     loop: true,
-
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        // hide: true,
-        behavior: 'smooth',
-        draggable: true,
-      },
-  });
-
-  const container = document.getElementById('container-clients-reviews');
-  const elementToScrollTo = container.querySelector('.element-to-scroll-to');
-  elementToScrollTo.scrollIntoView({ behavior: 'smooth' });
   
+    // If we need pagination
+    pagination: {
+      el: '.pagination',
+      clickable: true,
+    },
+  });
   

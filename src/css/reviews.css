@@ -16,6 +16,7 @@
 .list-clients-reviews {
     display: flex;
     gap: 16px;
+    margin-bottom: 15px;
 } 
 
 .clients-reviews-item {
@@ -57,6 +58,12 @@
     font-size: 14px;
     font-weight: normal;
     line-height: 1.4;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 374px) {
