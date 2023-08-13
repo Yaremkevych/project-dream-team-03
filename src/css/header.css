@@ -17,13 +17,11 @@
 .logo-icon:active {
   fill: #b6b6b6;
 }
-
 .header-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .header-list {
   display: none;
 }
@@ -51,9 +49,18 @@
   width: 100%;
   height: 100%;
   background: #fff;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0%);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mob-menu.is-hidden {
+  transform: translateX(100%);
+}
+.backdrop {
+  width: 100%;
+  max-width: 373px;
+  margin: 0 auto;
+}
 .header-mob-menu {
   margin-bottom: 114px;
   display: flex;
@@ -61,6 +68,16 @@
   align-items: center;
   padding: 28px 15px;
   background: #f7faff;
+}
+.mob-logo-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-logo-icon:hover,
+.mob-logo-icon:focus {
+  fill: #7a7a7a;
+}
+.mob-logo-icon:active {
+  fill: #b6b6b6;
 }
 
 .is-hidden {
@@ -75,21 +92,47 @@
 }
 .modal-icon {
   stroke: var(--blue-font);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon:hover,
+.modal-icon:focus {
+  stroke: #7a7a7a;
+}
+.modal-icon:active {
+  stroke: #b6b6b6;
 }
 .mob-list {
   text-align: center;
 }
 
-.mob-item {
-  transition: color 350ms cubic-bezier(0.13, 0.82, 0.96, 0.45);
+.mob-item-link {
+  transition: all 350ms cubic-bezier(0.13, 0.82, 0.96, 0.45),
+    border-color 350ms cubic-bezier(0.13, 0.82, 0.96, 0.45);
+  text-decoration: underline;
 }
-
-.mob-item:hover,
-.mob-item:active {
+.mob-item-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #7a7a7a;
+  transform: scaleX(0);
+  transform-origin: center center;
+  transition: transform 350ms cubic-bezier(0.13, 0.82, 0.96, 0.45);
+}
+.mob-item-link:hover::before,
+.mob-item-link:active::before {
+  transform: scaleX(1);
+}
+.mob-item:hover .mob-item-link,
+.mob-item:active .mob-item-link {
   color: #7a7a7a;
+  border-bottom-color: #7a7a7a;
 }
 
-.mob-item:active {
+.mob-item-link:active {
   color: #d9d9d9;
 }
 
@@ -101,7 +144,6 @@
   font-size: 16px;
   line-height: 1.5;
 }
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 734px;
@@ -120,7 +162,11 @@
     width: 40px;
     height: 40px;
   }
-
+  .backdrop {
+    width: 100%;
+    max-width: 734px;
+    margin: 0 auto;
+  }
   .mob-close-btn {
     width: 40px;
     height: 40px;
