@@ -16,13 +16,14 @@
 .list-clients-reviews {
     display: flex;
     gap: 16px;
-}
+} 
 
 .clients-reviews-item {
-    width: 100ww;
     background-color: #fff;
     border-radius: 8px;
     padding: 24px;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
 }
 
 .container-clients-img {
@@ -119,5 +120,8 @@
     }
     .reviews-text {
         max-width: 360px;
+    }
+    .swiper-tablet {
+        display: none;
     }
   }
