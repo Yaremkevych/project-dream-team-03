@@ -23,7 +23,14 @@
             </div>
             <button type="submit" class="send-btn">Send</button>
         </form>
-        <img srcset="./img/product-7-mob.jpg 1x, ./img/product-7-mob-2x.jpg 2x" src="./img/product-7-mob.jpg"
-            alt="Tea table and sofa" width="343" height="300" />
+        <picture>
+            <source srcset="./img/product-14-desktop.jpg 1x, ./img/product-14-desktop-2x.jpg 2x"
+                src="./img/product-14-desktop.jpg" media="(min width:1168px)" />
+            <source srcset="./img/product-11-tab.jpg 1x, ./img/product-11-tab-2x.jpg 2x" src="./img/product-11-tab.jpg"
+                media="(min width:768px)" />
+            <source srcset="./img/product-7-mob.jpg 1x, ./img/product-7-mob-2x.jpg 2x" src="./img/product-7-mob.jpg"
+                media="(min width:320px)" />
+            <img src="./img/product-14-desktop.jpg" alt="Tea table and sofa" width="704" />
+        </picture>
     </div>
 </section>

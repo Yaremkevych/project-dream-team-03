@@ -80,10 +80,6 @@
     fill: transparent;
 }
 
-.check-icon {
-    
-}
-
 .agreement-check:checked +.check-text .check-terms {
     border: none;
     background-color: #0A224A;
@@ -96,13 +92,13 @@
 
 @media screen and (min-width:320px) {
     .container {
-        max-width: 375px;
+        max-width: 373px;
     }
 }
 
 @media screen and (min-width:768px) {
     .container {
-        max-width: 768px;
+        max-width: 704px;
     }
 
     .subscription-form {
@@ -110,10 +106,8 @@
     }
 
     .subscription-title {
-        color: #0A224A;
         font-size: 32px;
         line-height: 1.4;
-        margin-bottom: 20px;
         text-align: start;
         margin-bottom: 30px;
     }
@@ -135,4 +129,39 @@
         font-size: 18px;
     }
 
+    .subscription-field-checkbox {
+        margin-bottom: 30px;
+    }
+
+    .send-btn {
+        font-size: 18px;
+        line-height: 1.33;
+        margin-bottom: 64px;
+    }
+
+}
+
+@media screen and (min-width:1320px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .subscription-form {
+        padding: 100px 0 86px 0;
+    }
+
+    .subscription-title {
+        margin-bottom: 31px;
+    }
+
+    .send-btn {
+    height: 52px;
+    margin-bottom: 0;
+    }
+
+    .subscription-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
