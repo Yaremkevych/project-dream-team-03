@@ -3,7 +3,7 @@
 .products-title {
     color: var(--blue-font);
         font-size: 28px;
-        line-height: 1.5em;
+        
         text-transform: uppercase;
        text-align: center;
        margin-bottom: 33px;
@@ -21,7 +21,7 @@
 .products-name {
     font-size: 16px;
     color: var(--blue-font);
-        line-height: 1.5em;
+        
         margin-top: 16px;    
 }
 
