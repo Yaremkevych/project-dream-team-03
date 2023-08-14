@@ -1,47 +1,25 @@
 <section class="subscription">
   <div class="container subscription-form">
     <div class="subscription-form-text">
-      <h1 class="subscription-title" id="subscription">Newsletter</h1>
+      <h2 class="subscription-title" id="subscription">Newsletter</h2>
       <p class="subscription-text">
         Every week we will send you new designs and information about sales.
       </p>
-      <form
-        id="subscription-form"
-        class="subscription-form-input"
-        name="subscriptionForm"
-        action=""
-        method="post"
-      >
+      <form class="subscription-form-input">
         <div class="subscription-field">
-          <input
-            id="username"
-            type="text"
-            name="client-name"
-            class="subscription-input"
-            minlength="2"
-            maxlength="16"
-            placeholder="Name"
-          />
+          <input required type="text" name="client-name" class="subscription-input" minlength="2" maxlength="16"
+            placeholder="Name" />
         </div>
         <div class="subscription-field">
-          <input
-            id="subscription-email"
-            name="client-email"
-            class="subscription-input"
-            placeholder="E-mail"
-          />
-          <svg id="email-error-icon" class="error-icon" width="24" height="24">
+          <input required type="email" name="client-email" class="subscription-input" placeholder="E-mail"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" />
+          <svg class="error-icon" width="24" height="24">
             <use href="./img/icons.svg#icon-circle-exclamation"></use>
           </svg>
         </div>
         <div class="subscription-field-checkbox">
-          <input
-            type="checkbox"
-            name="client-agreement"
-            value="true"
-            class="agreement-check visually-hidden"
-            id="client-agreement"
-          />
+          <input type="checkbox" name="client-agreement" value="true" class="agreement-check visually-hidden"
+            id="client-agreement" />
           <label for="client-agreement" class="check-text">
             <span class="check-terms">
               <svg class="check-icon" width="13" height="13">
@@ -55,29 +33,15 @@
       </form>
     </div>
     <picture>
-      <source
-        srcset="
-          ./img/product-14-desktop.jpg    1x,
-          ./img/product-14-desktop-2x.jpg 2x
-        "
-        src="./img/product-14-desktop.jpg"
-        media="(min width:1320px)"
-      />
-      <source
-        srcset="./img/product-11-tab.jpg 1x, ./img/product-11-tab-2x.jpg 2x"
-        src="./img/product-11-tab.jpg"
-        media="(min width:768px)"
-      />
-      <source
-        srcset="./img/product-7-mob.jpg 1x, ./img/product-7-mob-2x.jpg 2x"
-        src="./img/product-7-mob.jpg"
-        media="(min width:320px)"
-      />
-      <img
-        src="./img/product-14-desktop.jpg"
-        alt="Tea table and sofa"
-        width="704"
-      />
+      <source media="(min-width: 320px) and (max-width: 767px)"
+        srcset="./img/product-7-mob.jpg 1x, ./img/product-7-mob-2x.jpg 2x" type="image/jpg" />
+      <source media="(min-width: 768px) and (max-width: 1439px)"
+        srcset="./img/product-11-tab.jpg 1x, ./img/product-11-tab-2x.jpg 2x" type="image/jpg" />
+      <source media="(min-width: 1440px)" srcset="
+              ./img/product-14-desktop.jpg 1x,
+              ./img/product-14-desktop-2x.jpg 2x
+            " type="image/jpg" />
+      <img src="./img/product-14-desktop.jpg" alt="Tea table and sofa" width="704" height="auto" loading="lazy" />
     </picture>
   </div>
 </section>
