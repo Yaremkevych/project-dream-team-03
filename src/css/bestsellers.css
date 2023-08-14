@@ -61,11 +61,31 @@
   .bestsellers-list {
     display: grid;
     grid-gap: 20px;
+    width: 1092px;
+    height: 562px;
+    margin: 0 auto;
     grid-template-columns: 536px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
-  .item-main {
+  .item-a {
     grid-column: 1;
     grid-row: 1/3;
+  }
+  .item-b {
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+  .item-c {
+    grid-column: 3;
+    grid-row: 1/2;
+  }
+  .item-d {
+    grid-column: 2;
+    grid-row: 2/3;
+  }
+  .item-e {
+    grid-column: 3;
+    grid-row: 2/3;
   }
   .bestsellers-list-item:not(first-child) {
     width: 100%;
