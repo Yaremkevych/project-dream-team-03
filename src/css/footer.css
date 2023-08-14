@@ -12,11 +12,11 @@ address {
   justify-content: space-between;
   margin-bottom: 36px;
 }
-
 .footer-logo-icon {
   fill: var(--white);
 }
 .footer-social {
+  display: inline-block;
   margin-right: 16px;
 }
 .footer-social-icon {
@@ -25,12 +25,7 @@ address {
 .footer-list {
   color: var(--white);
 }
-.footer-item:not(:last-child) {
-  margin-bottom: 8px;
-}
-.footer-navigation {
-  padding-bottom: 36px;
-}
+
 .address {
   color: var(--white);
   margin-bottom: 64px;
@@ -66,7 +61,16 @@ address {
 .privacy-policy-link {
   text-decoration: underline;
 }
-
+@media screen and (max-width: 1439px) {
+  .footer-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-navigation {
+    padding-bottom: 36px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .footer-navigation {
     position: absolute;
@@ -74,12 +78,10 @@ address {
     left: 368px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 734px;
-  }
-  .footer {
-    position: relative;
   }
   .footer-conteiner {
     position: relative;
@@ -91,7 +93,6 @@ address {
   .footer-logo-icon {
     width: 127px;
   }
-
   .footer-adress {
     margin-bottom: 64px;
   }
@@ -138,7 +139,6 @@ address {
   .container {
     max-width: 1350px;
   }
-
   .footer-list {
     display: flex;
     gap: 30px;
@@ -147,8 +147,8 @@ address {
     position: absolute;
     top: 0;
     left: 336px;
+    padding: 8px;
   }
-
   .address {
     display: flex;
     gap: 85px;
