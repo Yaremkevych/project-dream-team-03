@@ -1,2 +1,3 @@
 import './js/mob-menu.js';
-import './js/emailValidation.js';
+import './js/slider.js';
+
