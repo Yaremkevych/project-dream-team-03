@@ -70,12 +70,11 @@
 }
 @media screen and (min-width: 1440px){
     .products{
-        padding-right: 60px;
-        padding-left: 60px;
+       
         padding-bottom: 100px;
     }
         .products-name {
-           
+        
             margin-top: 15px;
         }
     .products-container{
