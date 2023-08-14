@@ -3,7 +3,6 @@ import Swiper from 'swiper/bundle';
 
 const swiper = new Swiper('.swiper', {
     speed: 200,
-    loop: true,
   
     pagination: {
       el: '.pagination',
