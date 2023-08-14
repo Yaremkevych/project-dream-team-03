@@ -25,10 +25,9 @@
         margin-top: 16px;    
 }
 
-.item-second {
+/* .item-second {
     display: none;
 }
-
 
 
 .item-third {
@@ -37,9 +36,13 @@
 
 .item-fourth {
     display: none;
+} */
+
+.products-list-item:last-child(),
+.products-list-item:nth-last-child(2),
+.products-list-item:nth-last-child(3) {
+    display: none;
 }
-
-
 
 @media screen and (min-width: 768px){
     .item-second{
