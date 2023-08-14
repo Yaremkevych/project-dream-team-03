@@ -52,7 +52,7 @@ address {
 }
 .privacy-policy {
   text-align: center;
-  color: #b6b6b6;
+  color: var(--grey);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
@@ -159,5 +159,8 @@ address {
   }
   .contacts-list {
     margin-bottom: 0;
+  }
+  .footer-social {
+    margin-right: 0;
   }
 }
