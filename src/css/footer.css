@@ -72,7 +72,7 @@ address {
     max-width: 734px;
   }
   .footer {
-    /* position: relative; */
+    position: relative;
   }
   .footer-logo {
     position: relative;
