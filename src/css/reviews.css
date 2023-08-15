@@ -65,7 +65,7 @@
 }
 
 .reviews-text:last-child,
-.reviews-text:nth-last-child(3) {
+.reviews-text:first-child {
   line-height: 1.3;
   max-height: 98px;
 }
@@ -126,7 +126,7 @@
   }
 
   .reviews-text:last-child,
-  .reviews-text:nth-last-child(3) {
+  .reviews-text:first-child {
     max-height: 176px;
   }
 }
