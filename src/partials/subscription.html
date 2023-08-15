@@ -7,8 +7,11 @@
       </p>
       <form class="subscription-form-input">
         <div class="subscription-field">
-          <input required type="text" name="client-name" class="subscription-input" minlength="2" maxlength="16"
-            placeholder="Name" />
+          <input required type="text" name="client-name" class="subscription-input" placeholder="Name"
+            pattern="[A-Za-z ]{2,16}" />
+          <svg class="error-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-circle-exclamation"></use>
+          </svg>
         </div>
         <div class="subscription-field">
           <input required type="email" name="client-email" class="subscription-input" placeholder="E-mail"
