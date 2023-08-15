@@ -50,7 +50,7 @@
   }
   .section-about-wraper {
     position: relative;
-    padding-bottom: 64px;
+    margin-bottom: 64px;
   }
   .section-about-list li:not(:last-child) {
     margin-bottom: 30px;
@@ -67,7 +67,7 @@
     object-fit: cover;
     object-position: 25%;
   }
-  .section-about-item * {
+  .section-about-item {
     width: 170px;
     margin-left: auto;
     margin-right: auto;
