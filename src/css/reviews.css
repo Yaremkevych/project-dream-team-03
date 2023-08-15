@@ -18,6 +18,10 @@
   margin-bottom: 15px;
 }
 
+.swiper-slide {
+  height: auto;
+}
+
 .clients-reviews-item {
   background-color: #fff;
   max-width: 343px;
@@ -28,7 +32,7 @@
 .container-clients-img {
   display: flex;
   gap: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
 }
 
 .clients-img {
@@ -55,12 +59,6 @@
   line-height: 1.4;
 }
 
-/* .reviews-text:last-child,
-.reviews-text:first-child {
-  line-height: 1.3;
-  max-height: 98px;
-} */
-
 .pagination {
   display: flex;
   justify-content: center;
@@ -76,11 +74,6 @@
   .clients-subtitle {
     font-size: 14px;
   }
-  
-  /* .reviews-text:last-child,
-  .reviews-text:first-child {
-    max-height: 161px;
-} */
 }
 
 @media screen and (min-width: 768px) {
@@ -93,10 +86,6 @@
     line-height: 1.4;
     margin-bottom: 30px;
   }
-
-  /* .clients-reviews-item {
-    max-width: 343px;
-  } */
 
   .container-clients-img {
     margin-bottom: 14px;
@@ -119,11 +108,7 @@
   .reviews-text {
     font-size: 18px;
   }
-
-  /* .reviews-text:last-child,
-  .reviews-text:first-child {
-    max-height: 176px;
-  } */
+  
 }
 @media screen and (min-width: 1440px) {
 
@@ -138,5 +123,9 @@
   .clients-reviews-item {
     max-width: 424px;
     padding: 32px;
+  }
+
+  .container-clients-img {
+    margin-bottom: 16px;
   }
 }
