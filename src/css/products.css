@@ -79,7 +79,7 @@
            
         }
         .products-list-item{
-            width: calc((100% - 24px) / 4);
+            width: calc((100% - 24px * 3) / 4);
         }
         /* .item-third {
             display: block;
