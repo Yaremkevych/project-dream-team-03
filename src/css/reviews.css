@@ -76,6 +76,11 @@
   align-items: center;
 }
 
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--blue-font);
+}
+
 @media screen and (max-width: 374px) {
   .clients-subtitle {
     font-size: 14px;
