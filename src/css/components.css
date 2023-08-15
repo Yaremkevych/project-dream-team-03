@@ -29,6 +29,11 @@ ol {
 .link {
   text-decoration: none;
 }
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .container {
   width: 100%;
   max-width: 373px;

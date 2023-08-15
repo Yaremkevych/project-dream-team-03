@@ -78,11 +78,7 @@
   display: inline-block;
   padding: 10px;
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 .mob-close-btn {
   border: none;
   background: var(--light-blue);

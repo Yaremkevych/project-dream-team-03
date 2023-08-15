@@ -1,0 +1,38 @@
+.gallery {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--blue-focus);
+  z-index: 1001;
+  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery .carousel {
+  width: 100%;
+  margin: 100px auto 0;
+  overflow: visible;
+}
+.carousel img {
+  width: 50vw;
+  -webkit-box-reflect: below 20px
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
+.gallery-close-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+}
+.gallery-close-icon {
+  stroke: var(--white);
+}
+.bestsellers-list-item:hover img {
+  cursor: zoom-in;
+}
