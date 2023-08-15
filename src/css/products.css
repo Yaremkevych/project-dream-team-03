@@ -31,9 +31,6 @@
   .products {
     padding-bottom: 100px;
   }
-  .item-second {
-    display: block;
-  }
   .products-list {
     display: flex;
     flex-direction: row;
@@ -62,9 +59,7 @@
   .products-name {
     margin-top: 15px;
   }
-  .products-container {
-    max-width: 1320px;
-  }
+
   .products-list {
     gap: 24px;
   }
