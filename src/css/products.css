@@ -20,6 +20,8 @@
 }
 .products-img{
     margin-bottom: 16px;
+    display: block;
+
 }
 
 .products-name {
@@ -51,6 +53,7 @@
         }
                 .products-img {
                     margin-bottom: 15px;
+                    display: block;
                 }
         .products-title{
                 font-size: 32px;
@@ -84,6 +87,7 @@
         }
         .products-img{
             margin-bottom: 15px;
+            display: block;
         }
         /* .item-third {
             display: block;
