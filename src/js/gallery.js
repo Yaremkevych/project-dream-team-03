@@ -1,10 +1,10 @@
 (() => {
   const refs = {
-    openGallerryBtn: document.querySelectorAll('[gallery-open]'),
+    openGallerry: document.querySelector('[gallery-open]'),
     closeGalleryBtn: document.querySelector('[gallery-close]'),
     gallery: document.querySelector('[is-gallery]'),
   };
-  refs.openGallerryBtn.addEventListener('click', toggleGallery);
+  refs.openGallerry.addEventListener('click', toggleGallery);
   refs.closeGalleryBtn.addEventListener('click', toggleGallery);
 
   function toggleGallery() {
@@ -15,5 +15,4 @@
 $('.carousel').flipster({
   style: 'carousel',
   spacin: -0.3,
-  buttons: true,
 });
