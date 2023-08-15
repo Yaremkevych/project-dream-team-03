@@ -61,7 +61,6 @@
   max-width: 296px;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.4;
 }
 
 .reviews-text:last-child,
@@ -85,6 +84,11 @@
   .clients-subtitle {
     font-size: 14px;
   }
+  
+  .reviews-text:last-child,
+  .reviews-text:first-child {
+    max-height: 161px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -137,6 +141,10 @@
 
   .section-clients-reviews {
     padding: 60px 0px;
+  }
+
+  .list-clients-reviews {
+    gap: 24px;
   }
 
   .clients-reviews-item {
