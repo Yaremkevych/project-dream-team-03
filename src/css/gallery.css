@@ -13,19 +13,21 @@
 }
 
 .gallery .carousel {
-  width: 80vw;
+  width: 85%;
   margin: 100px auto 0;
   overflow: visible;
 }
 .carousel img {
-  -webkit-box-reflect: below 20px
+  -webkit-box-reflect: below 30px
     linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
+.carousel > ul > li {
+  width: 80%;
 }
 .gallery-close-btn {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px;
+  top: 25px;
+  right: 25px;
   background-color: transparent;
   border: none;
 }
@@ -34,4 +36,42 @@
 }
 .bestsellers-list-item:hover img {
   cursor: zoom-in;
+}
+.gallery-item-name {
+  color: var(--white);
+  font-size: 16px;
+  font-family: 'Playfair Display';
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .gallery-item-name {
+    font-size: 12px;
+  }
+  .gallery-close-btn {
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+  }
+  .gallery-close-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .carousel > ul > li {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .gallery-item-name {
+    font-size: 14px;
+  }
+  .gallery-close-btn {
+    top: 15px;
+    right: 15px;
+  }
+  .gallery-close-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .gallery .carousel {
+    width: 90%;
+  }
 }
