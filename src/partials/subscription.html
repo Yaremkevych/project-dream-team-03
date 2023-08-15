@@ -7,19 +7,39 @@
       </p>
       <form class="subscription-form-input">
         <div class="subscription-field">
-          <input required type="text" name="client-name" class="subscription-input" minlength="2" maxlength="16"
-            placeholder="Name" />
+          <input
+            required
+            type="text"
+            name="client-name"
+            class="subscription-input"
+            placeholder="Name"
+            pattern="[A-Za-z ]{2,16}"
+          />
+          <svg class="error-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-circle-exclamation"></use>
+          </svg>
         </div>
         <div class="subscription-field">
-          <input required type="email" name="client-email" class="subscription-input" placeholder="E-mail"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" />
+          <input
+            required
+            type="email"
+            name="client-email"
+            class="subscription-input"
+            placeholder="E-mail"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
           <svg class="error-icon" width="24" height="24">
             <use href="./img/icons.svg#icon-circle-exclamation"></use>
           </svg>
         </div>
         <div class="subscription-field-checkbox">
-          <input type="checkbox" name="client-agreement" value="true" class="agreement-check visually-hidden"
-            id="client-agreement" />
+          <input
+            type="checkbox"
+            name="client-agreement"
+            value="true"
+            class="agreement-check visually-hidden"
+            id="client-agreement"
+          />
           <label for="client-agreement" class="check-text">
             <span class="check-terms">
               <svg class="check-icon" width="13" height="13">
@@ -29,19 +49,36 @@
             Agree to subscribe to the newsletter
           </label>
         </div>
-        <button type="submit" class="send-btn">Send</button>
+        <button type="submit" class="send-btn shadow-drop-2-center">
+          <span class="btn-text">Send</span>
+        </button>
       </form>
     </div>
     <picture>
-      <source media="(min-width: 320px) and (max-width: 767px)"
-        srcset="./img/product-7-mob.jpg 1x, ./img/product-7-mob-2x.jpg 2x" type="image/jpg" />
-      <source media="(min-width: 768px) and (max-width: 1439px)"
-        srcset="./img/product-11-tab.jpg 1x, ./img/product-11-tab-2x.jpg 2x" type="image/jpg" />
-      <source media="(min-width: 1440px)" srcset="
-              ./img/product-14-desktop.jpg 1x,
-              ./img/product-14-desktop-2x.jpg 2x
-            " type="image/jpg" />
-      <img src="./img/product-14-desktop.jpg" alt="Tea table and sofa" width="704" height="auto" loading="lazy" />
+      <source
+        media="(min-width: 320px) and (max-width: 767px)"
+        srcset="./img/product-7-mob.jpg 1x, ./img/product-7-mob-2x.jpg 2x"
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px) and (max-width: 1439px)"
+        srcset="./img/product-11-tab.jpg 1x, ./img/product-11-tab-2x.jpg 2x"
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/product-14-desktop.jpg    1x,
+          ./img/product-14-desktop-2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        src="./img/product-14-desktop.jpg"
+        alt="Tea table and sofa"
+        width="704"
+        height="396"
+      />
     </picture>
   </div>
 </section>

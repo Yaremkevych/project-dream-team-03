@@ -2,6 +2,10 @@
   padding: 64px 0;
 }
 
+.subscription-form-text {
+  margin-bottom: 30px;
+}
+
 .subscription-title {
   color: var(--blue-font);
   font-size: 28px;
@@ -75,7 +79,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 30px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -116,6 +119,10 @@
   .subscription {
       padding: 100px 0;
     }
+
+    .subscription-form-text {
+      margin-bottom: 64px;
+    }
   
   .subscription-title {
     font-size: 32px;
@@ -146,7 +153,6 @@
   .send-btn {
     font-size: 18px;
     line-height: 1.33;
-    margin-bottom: 64px;
   }
 }
 
@@ -163,7 +169,6 @@
   
   .send-btn {
     height: 52px;
-    margin-bottom: 0;
   }
 
   .subscription-form {
@@ -183,5 +188,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 410px;
+    margin-bottom: 0;
   }
 }
+
