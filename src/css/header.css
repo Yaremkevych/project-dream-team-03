@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.mob-menu {
+  overflow-y: scroll;
+}
+
 .header {
   padding-top: 28px;
   padding-bottom: 28px;
