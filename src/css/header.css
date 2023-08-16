@@ -61,7 +61,7 @@
 .header-mob-menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 114px;
+  margin-bottom: clamp(10px, 20vh, 122px);
   padding: 28px 15px;
   background: var(--light-blue);
 }
@@ -141,11 +141,16 @@
 @media screen and (min-width: 320px) and (max-width: 372px) {
   .header-mob-menu {
     min-width: 320px;
-    margin-bottom: 114px;
+    margin-bottom: clamp(10px, 20vh, 122px);
     padding: 28px 15px;
   }
   .header-width {
     padding: 0;
+  }
+}
+@media screen and (max-height: 509px) {
+  .mob-menu .header-mob-menu {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -172,6 +177,9 @@
   }
   .header-width {
     width: 734px;
+  }
+  .header-mob-menu {
+    margin-bottom: clamp(10px, 21vh, 158px);
   }
 }
 .mob-item:not(:last-child) {
