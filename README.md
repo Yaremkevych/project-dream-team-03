@@ -31,11 +31,11 @@
 `«Header»` - те, з чого розпочинається подорож по сайту. Наша навігація є
 простою та зрозумілою.
 
-![Navigation](./src/img/readme/nav.jpg)
+![Navigation](./src/img/readme/nav.jpg | width=100)
 
 А мобільне меню сприяє зручності використання на мобільних пристроях.
 
-![Mobile menu](./src/img/readme/mob-menu.jpg)
+![Mobile menu](./src/img/readme/mob-menu.jpg | width=100)
 
 ### Hero
 
@@ -43,33 +43,33 @@
 інформацією. Анімація заголовка та кнопка, що направляє до форми, забезпечують
 зручність у користуванні.
 
-![Hero](./src/img/readme/hero.jpg)
+![Hero](./src/img/readme/hero.jpg | width=100)
 
 ### About us
 
 Секція `«About us»` містить важливу інформацію про компанію.
 
-![About as](./src/img/readme/about.jpg)
+![About as](./src/img/readme/about.jpg | width=100)
 
 ### Price
 
 Секція `«Price»` допомагає користувачам зорієнтуватись в цінах продукції.
 
-![Price](./src/img/readme/price.jpg)
+![Price](./src/img/readme/price.jpg | width=100)
 
 ### Products & Bestsellers
 
 Секції `«Products»` та `«Bestsellers»` дозволяють переглянути зображення
 товарів.
 
-![Products & Bestsellers](./src/img/readme/products.jpg)
+![Products & Bestsellers](./src/img/readme/products.jpg | width=100)
 
 ### Reviews
 
 Секція `«Reviews»` дозволяє користувачам ознайомитись з думками інших покупців.
 Зручний `«slider»` дозволяє комфортно проглядати відгуки на різних пристроях.
 
-![Reviews](./src/img/readme/reviews.jpg)
+![Reviews](./src/img/readme/reviews.jpg | width=100)
 
 ### Subscription
 
@@ -78,7 +78,7 @@
 допомагає користувачам зареєструватись для отримання інформації про нові
 продукти та знижки.
 
-![Reviews](./src/img/readme/subscription.jpg)
+![Reviews](./src/img/readme/subscription.jpg | width=100)
 
 ### Footer
 
@@ -86,4 +86,4 @@
 розташовані її логотип, навігаційні посилання на інші секції, адреса, телефон та
 посилання на соціальні мережі.
 
-![Reviews](./src/img/readme/footer.jpg)
+![Reviews](./src/img/readme/footer.jpg | width=100)
