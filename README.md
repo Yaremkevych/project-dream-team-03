@@ -31,11 +31,11 @@
 `«Header»` - те, з чого розпочинається подорож по сайту. Наша навігація є
 простою та зрозумілою.
 
-!(./assets/nav.jpg)
+![Navigation](./src/img/readme/nav.jpg)
 
 А мобільне меню сприяє зручності використання на мобільних пристроях.
 
-![Creating repo from a template step 2](./assets/mob-menu.jpg)
+![Mobile menu](./src/img/readme/mob-menu.jpg)
 
 ### Hero
 
@@ -43,10 +43,47 @@
 інформацією. Анімація заголовка та кнопка, що направляє до форми, забезпечують
 зручність у користуванні.
 
-![Creating repo from a template step 3](./assets/hero.jpg)
+![Hero](./src/img/readme/hero.jpg)
 
 ### About us
 
 Секція `«About us»` містить важливу інформацію про компанію.
 
-![Creating repo from a template step 4](./assets/about.jpg)
+![About as](./src/img/readme/about.jpg)
+
+### Price
+
+Секція `«Price»` допомагає користувачам зорієнтуватись в цінах продукції.
+
+![Price](./src/img/readme/price.jpg)
+
+### Products & Bestsellers
+
+Секції `«Products»` та `«Bestsellers»` дозволяють переглянути зображення
+товарів.
+
+![Products & Bestsellers](./src/img/readme/products.jpg)
+
+### Reviews
+
+Секція `«Reviews»` дозволяє користувачам ознайомитись з думками інших покупців.
+Зручний `«slider»` дозволяє комфортно проглядати відгуки на різних пристроях.
+
+![Reviews](./src/img/readme/reviews.jpg)
+
+### Subscription
+
+Секція `«Subscription»` є однією з найважливіших секцій, оскільки встановлює
+прямий зв'язок між компанією та її клієнтами. Проста та зрозуміла форма
+допомагає користувачам зареєструватись для отримання інформації про нові
+продукти та знижки.
+
+![Reviews](./src/img/readme/subscription.jpg)
+
+### Footer
+
+Секція `«Footer»` містить основну інформацію для зв'язку з компанією. Тут
+розташовані її логотип, навігаційні посилання на інші секції, адреса, телефон та
+посилання на соціальні мережі.
+
+![Reviews](./src/img/readme/footer.jpg)
