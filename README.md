@@ -31,7 +31,8 @@
 `«Header»` - те, з чого розпочинається подорож по сайту. Наша навігація є
 простою та зрозумілою.
 
-![Navigation](./src/img/readme/nav.jpg {width=100% height=auto})
+![Navigation](./src/img/readme/nav.jpg)
+<img src="./src/img/readme/nav.jpg" width=100% height=auto>
 
 А мобільне меню сприяє зручності використання на мобільних пристроях.
 
