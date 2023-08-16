@@ -17,18 +17,23 @@ address {
 }
 .footer-social {
   display: inline-block;
-  transition: transform cubic-bezier(0.13, 0.82, 0.96, 0.45);
+  transition: transform cubic-bezier(0.13, 0.82, 0.96, 0.45),
+    fill cubic-bezier(0.13, 0.82, 0.96, 0.45);
 }
 .footer-social:hover,
-.footer-social:active {
+.footer-social:focus {
   transform: scale(1.15);
 }
 
 .footer-social:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 15px;
 }
 .footer-social-icon {
   fill: var(--white);
+  transform: fill cubic-bezier(0.13, 0.82, 0.96, 0.45);
+}
+.footer-social:active .footer-social-icon {
+  fill: var(--dark-grey);
 }
 .footer-list {
   color: var(--white);
@@ -59,6 +64,7 @@ address {
 }
 
 .footer-item-link:hover::before,
+.footer-item-link:focus::before,
 .footer-item-link:active::before {
   transform: scaleX(1);
 }
@@ -81,7 +87,17 @@ address {
 .footer-adress-link {
   display: block;
   margin-bottom: 8px;
+  max-width: 250px;
   letter-spacing: 0.01em;
+  transition: box-shadow 250ms cubic-bezier(0.13, 0.82, 0.96, 0.45),
+    color 250ms cubic-bezier(0.13, 0.82, 0.96, 0.45);
+}
+.footer-adress-link:hover,
+.footer-adress-link:focus {
+  box-shadow: 0px 2px 5px var(--dark-grey);
+}
+.footer-adress-link:active {
+  color: var(--dark-grey);
 }
 .footer-adress-schedule {
   letter-spacing: 0.01em;
@@ -91,9 +107,29 @@ address {
 }
 .contacts-item-tel {
   letter-spacing: 0.01em;
+  transition: box-shadow 250ms cubic-bezier(0.13, 0.82, 0.96, 0.45),
+    color 250ms cubic-bezier(0.13, 0.82, 0.96, 0.45);
+}
+.contacts-item-tel:hover,
+.contacts-item-tel:focus {
+  box-shadow: 0px 2px 5px var(--dark-grey);
+}
+.contacts-item-tel:active {
+  color: var(--dark-grey);
 }
 .mail {
   display: none;
+}
+.contacts-item-mail {
+  transition: box-shadow 250ms cubic-bezier(0.13, 0.82, 0.96, 0.45),
+    color 250ms cubic-bezier(0.13, 0.82, 0.96, 0.45);
+}
+.contacts-item-mail:hover,
+.contacts-item-mail:focus {
+  box-shadow: 0px 2px 5px var(--dark-grey);
+}
+.contacts-item-mail:active {
+  color: var(--dark-grey);
 }
 .privacy-policy {
   text-align: center;
@@ -105,7 +141,13 @@ address {
 }
 .privacy-policy-link {
   text-decoration: underline;
+  transition: color 250ms cubic-bezier(0.13, 0.82, 0.96, 0.45);
 }
+.privacy-policy-link:hover,
+.privacy-policy-link:active {
+  color: var(--light-blue);
+}
+
 @media screen and (max-width: 1439px) {
   .footer-item:not(:last-child) {
     margin-bottom: 8px;
@@ -113,7 +155,7 @@ address {
 }
 @media screen and (max-width: 767px) {
   .footer-navigation {
-    padding-bottom: 36px;
+    margin-bottom: 36px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
