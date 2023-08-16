@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openGallerry: document.querySelector('[gallery-open]'),
-    closeGalleryBtn: document.querySelector('[gallery-close]'),
-    gallery: document.querySelector('[is-gallery]'),
+    openGallerry: document.querySelector('.bestsellers-list'),
+    closeGalleryBtn: document.querySelector('.gallery-close-btn'),
+    gallery: document.querySelector('.gallery'),
   };
   refs.openGallerry.addEventListener('click', toggleGallery);
   refs.closeGalleryBtn.addEventListener('click', toggleGallery);
