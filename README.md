@@ -29,8 +29,9 @@
 ### Header
 
 Те, з чого розпочинається подорож по сайту. Наша навігація є простою та
-зрозумілою. ![Creating repo from a template step 1]
-(./assets/template-step-1.png)
+зрозумілою.
+
+![Creating repo from a template step 1](./assets/template-step-1.png)
 
 А мобільне меню сприяє зручності використання на мобільних пристроях.
 
