@@ -218,6 +218,7 @@
   }
 
   .header-item-link:hover::before,
+  .header-item-link:focus::before,
   .header-item-link:active::before {
     transform: scaleX(1);
   }
