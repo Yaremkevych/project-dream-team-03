@@ -10,8 +10,6 @@
 }
 .logo {
   fill: var(--blue-font);
-  display: inline-block;
-  padding: 10px;
 }
 .logo-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -84,10 +82,7 @@
 .mob-logo-icon:active {
   fill: var(--dark-grey);
 }
-.mob-icon {
-  display: inline-block;
-  padding: 10px;
-}
+
 .mob-close-btn {
   border: none;
   background: var(--light-blue);
