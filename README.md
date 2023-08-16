@@ -29,15 +29,16 @@
 ### Header
 
 Те, з чого розпочинається подорож по сайту. Наша навігація є простою та
-зрозумілою. (./assets/template-step-1.png) А мобільне меню сприяє зручності
-використання на мобільних пристроях. (./assets/template-step-2.png) Використовуй
-цей репозиторій організації GoIT як шаблон для створення репозиторію свого
-проекту. Для цього натисни на кнопку `«Use this template»` і обери опцію
-`«Create a new repository»`, як показано на зображенні.
+зрозумілою. ![Creating repo from a template step 1]
+(./assets/template-step-1.png)
 
-![Creating repo from a template step 1]
+А мобільне меню сприяє зручності використання на мобільних пристроях.
 
-![Creating repo from a template step 2]
+![Creating repo from a template step 2](./assets/template-step-2.png)
+
+Використовуй цей репозиторій організації GoIT як шаблон для створення
+репозиторію свого проекту. Для цього натисни на кнопку `«Use this template»` і
+обери опцію `«Create a new repository»`, як показано на зображенні.
 
 Після того, як репозиторій буде створено, необхідно перейти в налаштування
 створеного репозиторію на вкладку `Settings` > `Actions` > `General` як показано
