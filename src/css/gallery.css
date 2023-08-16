@@ -13,7 +13,7 @@
 }
 
 .gallery .carousel {
-  width: 85%;
+  width: 945px;
   margin: 100px auto 0;
   overflow: visible;
 }
@@ -55,6 +55,9 @@
     width: 25px;
     height: 25px;
   }
+  .gallery .carousel {
+    width: 300px;
+  }
   .carousel > ul > li {
     width: 90%;
   }
@@ -62,6 +65,9 @@
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .gallery-item-name {
     font-size: 14px;
+  }
+  .gallery .carousel {
+    width: 500px;
   }
   .gallery-close-btn {
     top: 15px;
