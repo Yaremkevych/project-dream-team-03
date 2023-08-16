@@ -43,7 +43,7 @@
 інформацією. Анімація заголовка та кнопка, що направляє до форми, забезпечують
 зручність у користуванні.
 
-![Hero](./src/img/readme/hero.jpg {width=100% height=auto})
+![Hero](./src/img/readme/hero.jpg width=100% height=auto)
 
 ### About us
 
